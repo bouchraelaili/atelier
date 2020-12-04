@@ -1,0 +1,73 @@
+package breif;
+import java.util.Scanner; 
+
+
+
+public class calcul {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String nom,prenom;
+		double tarif = 0;
+		double	extratarif;
+		int nbrheure;
+		int nbrheurenouveau;
+		
+		
+		Scanner scanner= new Scanner(System.in);
+		
+		System.out.println("******* Bienvenue ********");
+		
+		System.out.println("Quel est votre nom");
+		nom = scanner.next();
+		
+		System.out.println("Quel est votre prenom");
+		prenom = scanner.next();
+		
+		System.out.println("Bienvenue " +nom+ " " +prenom);
+		
+		System.out.println("Entrer le nombre des heures que vous avez travailler dans cette semaine");
+		nbrheure = scanner.nextInt();
+		
+		if(nbrheure<=60)
+		{
+			System.out.println("Entrer le tarif par heure");
+			tarif = scanner.nextDouble();
+
+		
+		
+		 if (nbrheure>40)
+		{
+			
+			extratarif = tarif + 0.5*tarif;
+			System.out.println("voici votre salaire final " +extratarif);
+
+			nbrheurenouveau = nbrheure - 40;
+			extratarif = (nbrheure * tarif) + 0.5 *(nbrheurenouveau * tarif);
+			System.out.println("votre indemnisation est de " + 40 * tarif + " MAD");
+			
+			System.out.println("votre indemnisation total " + extratarif+ " MAD");
+			
+			System.out.println("les heures que tu as ajouté " + nbrheurenouveau+ " heures");
+		}
+		else {
+
+			System.out.println("votre indemnisation est " + nbrheure * tarif + " MAD");
+		}
+	}
+	
+	else {
+		System.out.println("informations erronés ");
+	}
+	
+	scanner.close();
+}
+		
+
+		
+		
+		
+	}
+
+

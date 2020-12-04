@@ -1,0 +1,33 @@
+package projectalgo;
+import java.util.Scanner; 
+
+
+
+public class exerc2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		 double pht,ttva,nbarticle,pttc;
+		
+		 Scanner sc = new Scanner(System.in);
+			
+		 System.out.println("enter le prix ht:");
+		 pht = sc.nextDouble();
+		 
+		 System.out.println("enter le nbr article:");
+		 nbarticle= sc.nextDouble();
+		 
+		 System.out.println("enter le total tva:");
+		 ttva = sc.nextDouble();
+		 
+		 
+		
+		 pttc  = nbarticle * pht * (1 + ttva);
+		 System.out.println(pttc);
+		
+
+	}
+
+}

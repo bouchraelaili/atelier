@@ -1,0 +1,33 @@
+package projectalgo;
+import java.util.Scanner; 
+
+
+import java.util.Scanner;
+
+public class exerc6 {
+
+	public static void main(String[] args) {
+	String genre,nom,prenom;
+	int age;
+	
+	Scanner scanner= new Scanner(System.in);
+	
+	System.out.println("Quel est votre nom");
+	nom = scanner.next();
+	System.out.println("Quel est votre prenom");
+	prenom = scanner.next();
+	System.out.println("Vous etes un homme ou une femme?");
+	genre = scanner.next();
+	System.out.println("Votre  age ?");
+	age= scanner.nextInt();
+	
+	
+	System.out.println("Bonjour " +nom+" "+prenom+" tu as "+age+"ans.");
+	
+		
+
+	
+}
+
+}
+

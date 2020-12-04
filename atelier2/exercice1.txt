@@ -1,0 +1,16 @@
+package projectalgo;
+import java.util.Scanner; 
+
+
+
+public class exer1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 System.out.println("entrez votre prénom :");
+		  Scanner name = new Scanner(System.in);
+			String prenom = name.nextLine();
+			System.out.println("Bonjour :"+prenom);
+	}
+
+}
